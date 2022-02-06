@@ -8,6 +8,10 @@ body {
 }
 
 
+.btn {
+    border: none;
+}
+
 .header {
     width: 500px;
     margin: 0 auto;
@@ -22,10 +26,11 @@ body {
     }
 
     &__info {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         margin-right: 50px;
         cursor: pointer;
+        transition: all .4s;
     }
 
     &__title {
@@ -129,6 +134,8 @@ body {
         text-align: center;
         color: #000;
         // margin: 60px 0;
+        margin-top: 30px;
+        margin-bottom: 80px;
     }
 
     &__close {
@@ -150,6 +157,59 @@ body {
         font-size: 60px;
         font-weight: 700;
         color: #000;
+    }
+
+    &__button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+}
+
+
+
+.info-game {
+    position: absolute;
+    display: none;
+    max-width: 500px;
+    width: 100%;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+    background-color: #fff;
+
+
+    &__inner {
+        padding: 40px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 40px;
+        color: #000;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: #000;
+    }
+
+    &__letter {
+        display: inline-block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+    }
+
+    &__close {
+        position: absolute;
+        width: 30px;
+        right: 20px;
+        top: 15px;
+        cursor: pointer;
+        transition: all .4s;
     }
 }
 
