@@ -41,19 +41,40 @@
   <div class="wrapper">
     <div class="statistics">
       <div class="statistics__content">
-        <div class="statistics__title"></div>
+        <div class="statistics__title">Ничего страшного, в следующий раз повезет)</div>
         <div class="statistics__close">
           <img class="statistics__img-close" src="./images/close.png" alt="">
         </div>
-        <div class="statistics__data"></div>
-        <div class="statistics__info">
-          <span class="statistics__next-word">Следующее слово через: </span>
-          <span class="statistics__next-time-wordle"></span>
-        </div>
+        <button class="statistics__button">Начать новую игру</button>
       </div>
     </div>
   </div>
+  </div>
 
+  <div class="info-game">
+    <div class="info-game__inner">
+      <div class="info-game__title">wordle</div>
+      <div class="info-game__close">
+        <img class="info-game__img-close" src="./images/close.png" alt="">
+      </div>
+      <p class="info-game__text">
+        Попробуйте угадать правильное слово за 5 попыток, ввода нужную букву с помощью клавиатуры.
+        Каждое предположение отправляется нажатием клавиши enter.
+        Как только предположение отправлено,
+        каждая правильная буква в правильном положении отображается зеленым цветом
+        <span class="info-game__letter green-color">Н</span> ,
+        каждая правильная буква в неправильном положении отображается оранжевым цветом
+        <span class="info-game__letter yellow-color">Л</span>,
+        а буквы, которых нет в слове, отображаются серым цветом
+        <span class="info-game__letter gray-color">А</span>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- добавить клавиатуру на экран -->
+
+  
   <script src="js/main.min.js"></script>
 </body>
 
